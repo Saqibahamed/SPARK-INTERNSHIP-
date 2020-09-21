@@ -1,0 +1,115 @@
+<html>
+<style type="text/css">
+body{
+ margin:0;
+ padding: 0;
+ font-family:sans-serif;
+ background-image: url("allusers.jpg");
+ background-size: cover; 
+}
+
+}
+.button {
+  background-color:#f44336c7; 
+  
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+   
+  transition-duration: 0.4s;
+}
+
+form{
+width: 500px;
+position : absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+color:white;
+padding : 40px;
+ background-color: #ff483a47;
+}
+h1{
+ font-weight:bold;
+ color:black;
+ }
+ 
+
+table{
+color:white;
+
+}
+h2{
+font-size: 40px;
+
+}
+input[type=text] {
+  width: 50%;
+  box-sizing: border-box;
+
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('coin.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 6px 4px 10px 50px;
+}
+</style>
+<body>
+
+<form action="transfer.php" method="POST">
+<center>
+<h2>TRANSFER CREDIT</h2>
+<table><tr><td align="left">
+
+
+
+
+
+
+Sender's Name </td><td><select name="sender">
+  
+  <option value="SAQIB">SAQIB</option>
+  <option value="MARTHA">MARTHA</option>
+  <option value="JONAS">JONAS</option>
+  <option value="TONY">TONY</option>
+  <option value="VOLDEMORT">VOLDEMORT</option>
+  <option value="HARRY">HARRY POTTER</option>
+  <option value="CHANDLER">CHANDLER</option> 
+  <option value="JOEY">JOEY</option>  
+  <option value="PROFESSOR">PROFESSOR</option>
+  <option value="HELGA">HELGA</option>
+</select></td></tr>
+<tr><td>
+Receiver's Name</TD><td><select name="receiver">
+  
+  <option value="SAQIB">SAQIB</option>
+  <option value="MARTHA">MARTHA</option>
+  <option value="JONAS">JONAS</option>
+  <option value="TONY">TONY</option>
+  <option value="VOLDEMORT">VOLDEMORT</option>
+  <option value="HARRY">HARRY</option>
+  <option value="CHANDLER">CHANDLER</option>
+  <option value="JOEY">JOEY</option>  
+  <option value="PROFESSOR">PROFESSOR</option>
+  <option value="HELGA">HELGA</option>
+</select></TD></TR>
+<TR><TD>Credit</TD><TD><input type="text" name="credits"></TD></TR>
+<br>
+</TABLE><input type="submit" value="TRANSFER">
+<br>
+<center>
+<br>
+<a href="user.php"><input type="button" class="button button1" value="BACK"></button></a></center>
+</center>
+</form>
+</form>
+
+</body>
+</html>
